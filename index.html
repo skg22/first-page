@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
+<!--displaying table border-->
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+<!--displaying table border-->
+
 <!--BACKGROUND IMAGE>NOT WORKING-->	
 <style>
-    body {
-  background-image: url('C:\Users\skg\OneDrive\Documents\Programming learning\HTML coding\flower and leaves_pub');
+body {
+  background-image:"C:\Users\skg\OneDrive\Documents\Programming learning\HTML coding ('flower and leaves_pub')";
 }
 </style>
 <!--BACKGROUND IMAGE>NOT WORKING-->	
+<head>
+        <!--id #name can be used only once in the htmp page-->
+    <style>
+        #myHeader {     	
+          background-color: lightblue;
+          color: black;
+          padding: 10px;
+          text-align: left;
+        }
+        #highlight {
+          background-color: lightgreen;
+          color: blue;
+          font-weight: bold;
+          text-align: left;
+        } 
+    </style>
+    <!--id .class can be used many times in the htmp page-->
+    <style>
+      .feat {     	
+        background-color:lightpink;
+        color:black;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 500;
+        text-align: left;
+      }
+    </style>
 </head>
 <title>Suman's website</title>
 </head>
 <body>
 Suman's first web page design
 <!--this is a note, not for displaying-->	
-<h1>Welcome to Suman's webpage</h1>
-<h2>I am learning to develop webpage </h2>
+<h1 id="myHeader">Welcome to Suman's webpage</h1>
+<h2 class="feat">I am learning to develop webpage </h2>
 <!--<hr> is a line break display-->
 <hr>
-<p>Collage time is the best in one's life </p>
-<p>Checking Git Hub working !!!</p>
+<p id="highlight"> Collage time is the best in one's life </p>
+<p style="color:green;"> Checking Git Hub working !!!</p>
 <!--Un-ordered list-->
 <ul>
     <li>Bird</li>
@@ -34,7 +67,7 @@ Suman's first web page design
     <li>Hare</li>
 </ol>
 <!--Table creation-->
-<table>
+<table style="width:50%">   <!--table borders cover 50% of screen width-->
  <!--<tr> defines a row in table-->
     <tr>
 <!--<th> defines a header in table--> 
@@ -57,24 +90,28 @@ Suman's first web page design
       <td>12</td>
     </tr>
   </table>
-  <!--<sub> defines subscript text-->
-  <p>CO<sub>2</sub> release in atmosphere is creating Global warming</p>
+  <!--<sub> defines subscript text, <span> is typical inline element-->
+  <p>CO<sub>2</sub> release in atmosphere is creating <span style="background-color: orangered";>Global Warming</span></p>
    <!--<sup> defines superscript text-->
   <p> Avogadro number is 6.023 x 10<sup>23</sup>. This 
     is the number of molecules / atoms per mole gram</p>
-   <!--imeage display-->
+    <!--image display with specifid width and height-->
     <img src="C:\Users\skg\OneDrive\Documents\Programming learning\HTML coding\hare_pub.jpg" alt="Hare" style="width:128px;height:128px;">
     <br>
      <!--only "car web site link" is visible, target variable for web page opening location-->
     <a href="https://www.toyota.com" target="_blank">car web site link</a>
+    <DIV>     <!--block level element forcing next line ?? -->
     <!--email link on the web site-->
-    <DIV>
     </a> Link to an Email Address <a href="mailto:hopethebest2021@outlook.com">Send email</a>
     </DIV>
-     <!--GRAPHICS NOT WORKING-->   
+    <!--GRAPHICS NOT WORKING-->
     <svg width="600" height="100">
         <line x1 50 y1 50 x2 90 y2 10 style="stroke:rgb(105,150,150);stroke-width:2" />
     </svg>
-      <!--GRAPHICS NOT WORKING-->  
+      <!--GRAPHICS NOT WORKING-->
+    <h2>Some wide topic discussions</h2>
+    <p>There are four nature's forces. Gravitional force, Electromagnatice force, Strong nuclear force & weak nuclear force</p>
+    <p>Traditional dances and songs are being lost gradually worldwide</p>
+    <p>The personality and values of a Man is shaped by his sorruonding and circumstances</p>
 </body>
 </html>
